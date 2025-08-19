@@ -1,0 +1,11 @@
+.signOutBtn {
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    width: fit-content;
+    cursor: pointer;
+}
+.signOutBtn >* {
+margin: 0;
+margin-right: 10px;
+}
