@@ -25,7 +25,7 @@ export async function POST(request: Request) {
         
         Thank you! <3
     `,
-    });
+    });  
 
     const interview = {
       role: role,
@@ -38,6 +38,7 @@ export async function POST(request: Request) {
       coverImage: getRandomInterviewCover(),
       createdAt: new Date().toISOString(),
     };
+    console.log("🚀 ~ POST ~ interview:", interview)
 
     await db.collection("interviews").add(interview);
 
